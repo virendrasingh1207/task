@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "166bd56b-6de7-4e4f-92de-50559c814d36",
+		"name": "laravel-api-task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "user@yopmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/laravel-api-task/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel-api-task",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-profile-image",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2phYnktam9iLWJhY2tlbmQvYXBpL2xvZ2luIiwiaWF0IjoxNjY3NjQ2MDU3LCJuYmYiOjE2Njc2NDYwNTcsImp0aSI6InR3U0h2MVZsd05DcXhlc0siLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.n1WQO5TosTnUJVIo63as9L6cGmXt7zLYE-L_G7gBE6c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/gupta/Desktop/viruData/DCIM/100APPLE/IMG_0316.JPG"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/laravel-api-task/api/update-profile-image",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel-api-task",
+						"api",
+						"update-profile-image"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
